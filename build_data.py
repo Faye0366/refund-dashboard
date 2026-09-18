@@ -132,7 +132,15 @@ DASHBOARD_HEAD = r'''<!DOCTYPE html>
     gap: 14px;
     box-shadow: 0 4px 16px rgba(15,23,42,.18);
   }
-  .hero-left { display: flex; align-items: center; }
+  .hero-left { display: flex; align-items: center; gap: 14px; }
+  .home-link {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 40px; height: 40px; border-radius: 10px;
+    background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.35);
+    color: #fff; font-size: 20px; line-height: 1; text-decoration: none;
+    flex-shrink: 0; transition: background .2s, transform .2s;
+  }
+  .home-link:hover { background: rgba(255,255,255,0.32); transform: translateY(-1px); }
   .hero h1 {
     font-size: 26px;
     font-weight: 700;
@@ -411,6 +419,7 @@ DASHBOARD_HEAD = r'''<!DOCTYPE html>
 <div class="bd-error" id="bdError"></div>
 <div class="hero">
   <div class="hero-left">
+    <a class="home-link" href="https://faye0366.github.io/dashboard-portal/" title="返回统一入口主页">🏠</a>
     <h1>
       退费渠道订单数据看板
       <small>按渠道查看退费笔数、金额、面额分布与日趋势</small>
@@ -843,6 +852,7 @@ COMPARE_BODY = r'''
 <div class="bd-error" id="bdError"></div>
 <div class="hero">
   <div class="hero-left">
+    <a class="home-link" href="https://faye0366.github.io/dashboard-portal/" title="返回统一入口主页">🏠</a>
     <h1>退费渠道数据对比<small>多渠道横向对比 · 年累计 / 当月 / 月度明细 / 日趋势</small></h1>
   </div>
   <div class="hero-pills">
