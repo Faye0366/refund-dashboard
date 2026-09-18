@@ -9,3 +9,6 @@ chart.umd.min.js
 dist/
 __pycache__/
 *.pyc
+
+# 删除文件的本地物理备份（不入库）
+_backup_*/
