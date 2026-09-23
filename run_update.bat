@@ -1,7 +1,7 @@
 @echo off
 cd /d "%~dp0"
 set "PY=C:\Users\Faye\.workbuddy\binaries\python\envs\default\Scripts\python.exe"
-set "GIT_SSH_COMMAND=C:/Users/Faye/.workbuddy/vendor/PortableGit/usr/bin/ssh.exe"
+set "GIT_SSH_COMMAND=C:/Users/Faye/.workbuddy/binaries/PortableGit/versions/1.2.0/usr/bin/ssh.exe"
 
 echo ============================================
 echo   Refund Dashboard - One-click Update
